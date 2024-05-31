@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+
+
+/* Definindo as cores de fundo para o modo escuro */
+:root {
+    --dark-bg-gray-900: #09090b;
+    --dark-bg-slate-900: #09090b;
+    --dark-bg-gray-800: #18181b;
+    --dark-bg-slate-800: #18181b; 
+}
+
+.dark .dark\:bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: var(--dark-bg-gray-900);
+}
+
+.dark .dark\:bg-slate-900 {
+    --tw-bg-opacity: 1;
+    background-color: var(--dark-bg-slate-900);
+}
+
+.dark .dark\:bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: var(--dark-bg-gray-800);
+}
+
+.dark .dark\:bg-slate-800 {
+    --tw-bg-opacity: 1;
+    background-color: var(--dark-bg-slate-800); 
+}
+
+:is(.dark .dark\:bg-gray-800) {
+    --tw-bg-opacity: 1;
+    background-color: var(--dark-bg-gray-800);
+}
+
+/* fim Definindo a cor de fundo específica para o modo escuro */
+
+/* Definindo as cores primarias */
+:root {
+    --primary-50: #F2F9F7;
+    --primary-100: #D5F3E9;
+    --primary-200: #A7E8D2;
+    --primary-300: #5FD9B4;
+    --primary-400: #21C995;
+    --primary-500: #00A174;
+    --primary-600: #008B64;
+    --primary-700: #007653;
+    --primary-800: #006342;
+    --primary-900: #004E2C;
+    --primary-950: #00341A;
+}
+.dark .dark\:text-primary-500 {
+    --tw-text-opacity: 1;
+    color: var(--primary-500);
+}
+
+.dark .dark\:text-primary-600 {
+    --tw-text-opacity: 1;
+    color: var(--primary-600);
+}
+
+.dark .dark\:text-primary-700 {
+    --tw-text-opacity: 1;
+    color: #var(--primary-700);
+}
+
+.dark .dark\:text-primary-800 {
+    --tw-text-opacity: 1;
+    color: var(--primary-800);
+}
+
+.dark .dark\:text-primary-900 {
+    --tw-text-opacity: 1;
+    color: #005832;
+}
+
+.dark .dark\:text-primary-950 {
+    --tw-text-opacity: 1;
+    color: var(--primary-900);
+}
+
+/* Estilos de botão com gradiente */
+.btn-primary-gradient {
+    background-image: linear-gradient(to right, var(--primary-500), var(--primary-600));
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+}
+
+.btn-primary-gradient:hover {
+    background-image: linear-gradient(to right, var(--primary-600), var(--primary-500));
+}
+
+.text-primary {
+    color:var(--primary-500);
+}
+
+.text-primary:hover {
+     color:var(--primary-600);
+}
+
+.border-primary-500:focus{
+    border-color:var(--primary-500);
+}
+
+.border-primary-600:focus{
+    border-color:var(--primary-600);
+}
+
+.ring-primary-500:focus {
+     border-color:var(--primary-500);
+}
+
+.ring-primary-600:focus {
+     border-color:var(--primary-600);
+}
+
+
+

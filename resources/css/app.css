@@ -1,3 +1,5 @@
+/* resources/css/app.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +8,12 @@
     display: none;
 }
 
-
+/* Custom styles for password input */
+.relative .absolute {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* Definindo as cores de fundo para o modo escuro */
 :root {
@@ -103,28 +110,25 @@
 }
 
 .text-primary {
-    color:var(--primary-500);
+    color: var(--primary-500);
 }
 
 .text-primary:hover {
-     color:var(--primary-600);
+     color: var(--primary-600);
 }
 
-.border-primary-500:focus{
-    border-color:var(--primary-500);
+.border-primary-500:focus {
+    border-color: var(--primary-500);
 }
 
-.border-primary-600:focus{
-    border-color:var(--primary-600);
+.border-primary-600:focus {
+    border-color: var(--primary-600);
 }
 
 .ring-primary-500:focus {
-     border-color:var(--primary-500);
+     border-color: var(--primary-500);
 }
 
 .ring-primary-600:focus {
-     border-color:var(--primary-600);
+     border-color: var(--primary-600);
 }
-
-
-
